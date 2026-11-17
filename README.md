@@ -1,11 +1,17 @@
 # tiny-chess-01
 
-A 4 KB Python chess engine for the make.fun tiny-chess-01 bounty.
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/Besson1412/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/Besson1412/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-The engine uses iterative-deepening alpha-beta search with a fixed 100,000-node cap per move, counted cumulatively and checked in both the main search and quiescence, so no move can run away on time. It also uses quiescence search, a transposition table, a Zobrist repetition check from the game history, and a material plus piece-square-table evaluation. It is deterministic: fixed node budget, no clock, no unseeded randomness.
+A 4 KB Python chess engine for the make.fun tiny-chess-01 bounty: iterative-deepening alpha-beta search with a fixed 100,000-node cap per move, quiescence search, transposition table, and piece-square-table evaluation. Deterministic — no clock, no randomness. Practice trials (kit, local): Elo 1191 / 1099 / 1364, average 1218, zero timeouts, max move 5.34 s.
 
-The entrypoint `main.py` is produced from the readable `engine.py` with the kit's `makefun compress` command.
+## Run it
 
-Practice trials (local kit harness): Elo 1191 / 1099 / 1364, average 1218, with zero timeouts. Slowest move 5.34 s against a 10 s move limit.
+```sh
+python3 -P -s main.py
+```
 
-MIT license.
+---
+
+<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
