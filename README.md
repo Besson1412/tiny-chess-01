@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-chess-01/Besson1412/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/Besson1412/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-A 4 KB Python chess engine for the make.fun tiny-chess-01 bounty: iterative-deepening alpha-beta search with a fixed 100,000-node cap per move, quiescence search, transposition table, and piece-square-table evaluation. Deterministic — no clock, no randomness. Practice trials (kit, local): Elo 1191 / 1099 / 1364, average 1218, zero timeouts, max move 5.34 s.
+A 4 KB Python chess engine for the make.fun tiny-chess-01 bounty: iterative-deepening alpha-beta search with a fixed 100,000-node cap per move, quiescence search, transposition table, and piece-square-table evaluation. Deterministic — no clock, no randomness. Evaluation tuned by self-play (piece values and PST terms). Practice trial-0 (kit, local): Elo 1364 after tuning (was 1191), zero timeouts, max move 2.61 s.
 
 ## Run it
 
